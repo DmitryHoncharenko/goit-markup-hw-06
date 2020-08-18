@@ -73,7 +73,31 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--white-color);
   background-image: url(../images/Vectorclose.png);
+  /* display: flex;
+  flex-direction: column; */
 }
+/* .form-name {
+  position: relative;
+}
+.name-form {
+  position: absolute;
+} */
+
+.text-form {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--black-color);
+}
+.first {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+/* .second {
+  display: block;
+} */
 
 .img {
   display: inline-block;

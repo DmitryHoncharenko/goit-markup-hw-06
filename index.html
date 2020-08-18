@@ -68,6 +68,74 @@
           <button class="btn" data-modal-open>Заказать услугу</button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
+              <div role="group" class="first">
+                <h1 class="text-form">
+                  Оставьте свои данные, мы вам перезвоним
+                </h1>
+
+                <ul class="second">
+                  <div>
+                    <li class="list">
+                      <form>
+                        <label class="name-form">
+                          Имя
+                          <input
+                            type="text"
+                            name="message"
+                            placeholder="Введите сообщение"
+                          />
+                        </label>
+                      </form>
+                    </li>
+                  </div>
+                  <div>
+                    <li class="list">
+                      <form>
+                        <label>
+                          телефон
+                          <input type="tel" name="telephone" />
+                        </label>
+                      </form>
+                    </li>
+                  </div>
+                  <div>
+                    <li class="list">
+                      <form>
+                        <label>
+                          почта
+                          <input type="email" name="email" />
+                        </label>
+                      </form>
+                    </li>
+                  </div>
+                </ul>
+
+                <div role="group">
+                  <textarea
+                    name="comment"
+                    rows="5"
+                    cols="45"
+                    placeholder="Введите текст"
+                  >
+                  </textarea>
+                </div>
+
+                <div role="group">
+                  <input
+                    id="submit-1"
+                    name="submit"
+                    type="checkbox"
+                    value="#"
+                  />
+                  <label for="submit-1"
+                    >Соглашаюсь с рассылкой и принимаю
+                    <a href="#">Условия договора</a>
+                  </label>
+                </div>
+
+                <button type="submit">Отправить</button>
+              </div>
+
               <button class="btn-close" data-modal-close></button>
             </div>
           </div>
