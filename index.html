@@ -68,59 +68,77 @@
           <button class="btn" data-modal-open>Заказать услугу</button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <div role="group" class="first">
+              <form class="form-page">
                 <h1 class="text-form">
                   Оставьте свои данные, мы вам перезвоним
                 </h1>
 
-                <ul class="second">
-                  <div>
-                    <li class="list">
-                      <form>
-                        <label class="name-form">
-                          Имя
-                          <input
-                            type="text"
-                            name="message"
-                            placeholder="Введите сообщение"
-                          />
-                        </label>
-                      </form>
-                    </li>
-                  </div>
-                  <div>
-                    <li class="list">
-                      <form>
-                        <label>
-                          телефон
-                          <input type="tel" name="telephone" />
-                        </label>
-                      </form>
-                    </li>
-                  </div>
-                  <div>
-                    <li class="list">
-                      <form>
-                        <label>
-                          почта
-                          <input type="email" name="email" />
-                        </label>
-                      </form>
-                    </li>
-                  </div>
-                </ul>
+                <div class="form-section">
+                  <input
+                    type="text"
+                    class="form-input"
+                    name="message"
+                    id="name"
+                    placeholder=""
+                  />
+                  <label class="form-lebel" for="name">
+                    Имя
+                  </label>
+                  <span class="form-iconname">
+                    <svg width="12" height="12">
+                      <use href="./images/sprite2.svg#icon-Vectorname"></use>
+                    </svg>
+                  </span>
+                </div>
 
-                <div role="group">
+                <div class="form-section">
+                  <input
+                    type="tel"
+                    class="form-input"
+                    name="telephone"
+                    id="telephone"
+                    placeholder=""
+                  />
+                  <label class="form-lebel" for="telephone">
+                    Телефон
+                  </label>
+                  <span class="form-iconname">
+                    <svg width="13" height="13">
+                      <use
+                        href="./images/sprite2.svg#icon-Vectortelephone"
+                      ></use>
+                    </svg>
+                  </span>
+                </div>
+
+                <div class="form-section">
+                  <input
+                    type="email"
+                    class="form-input"
+                    name="email"
+                    id="email"
+                    placeholder=""
+                  />
+                  <label class="form-lebel" for="email">
+                    Почта
+                  </label>
+                  <span>
+                    <svg width="15" height="12" class="form-iconname">
+                      <use href="./images/sprite2.svg#icon-Vectorpochta"></use>
+                    </svg>
+                  </span>
+                </div>
+                <div>
                   <textarea
+                    class="form-textarea"
                     name="comment"
                     rows="5"
                     cols="45"
-                    placeholder="Введите текст"
+                    placeholder="Введитетекст"
                   >
                   </textarea>
                 </div>
-
-                <div role="group">
+                <div class="form-submit">
                   <input
                     id="submit-1"
                     name="submit"
@@ -133,9 +151,8 @@
                   </label>
                 </div>
 
-                <button type="submit">Отправить</button>
-              </div>
-
+                <button class="btn" type="submit">Отправить</button>
+              </form>
               <button class="btn-close" data-modal-close></button>
             </div>
           </div>

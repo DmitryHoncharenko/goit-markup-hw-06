@@ -52,13 +52,18 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 528px;
+  height: 581px;
   transform: translate(-50%, -50%);
   min-width: 528px;
   min-height: 581px;
   display: inline-flex;
   justify-content: flex-end;
-  align-items: baseline;
+
   background: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
   z-index: 1;
 }
 
@@ -66,6 +71,7 @@ body {
   box-sizing: border-box;
   width: 30px;
   height: 30px;
+  margin: 8px 8px 2px 2px;
   background-repeat: no-repeat;
   background-size: 11px 11px;
   background-position: center;
@@ -73,15 +79,13 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--white-color);
   background-image: url(../images/Vectorclose.png);
-  /* display: flex;
-  flex-direction: column; */
+  padding: 0;
 }
-/* .form-name {
-  position: relative;
+
+.form-page {
+  margin-top: 40px;
+  max-width: 100%;
 }
-.name-form {
-  position: absolute;
-} */
 
 .text-form {
   font-weight: bold;
@@ -89,15 +93,61 @@ body {
   line-height: 1.15;
   text-align: center;
   color: var(--black-color);
-}
-.first {
-  display: inline-flex;
-  flex-direction: column;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
-/* .second {
-  display: block;
-} */
+.form-section {
+  margin-bottom: 28px;
+}
+
+.form-input {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.form-lebel {
+  position: absolute;
+  left: 40px;
+  transform: translatey(-140%);
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.167;
+  color: var(--main-color);
+
+  letter-spacing: 0.01em;
+}
+
+.form-iconname {
+  position: absolute;
+  padding: 14px 15px;
+
+  left: 40px;
+
+  transform: translateY(-10%);
+}
+
+.form-iconname:focus-within {
+  background-color: var(--accent-color);
+}
+
+.form-textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  width: 448px;
+  height: 120px;
+  resize: none;
+}
+
+.form-submit {
+  margin-bottom: 30px;
+}
 
 .img {
   display: inline-block;
@@ -254,18 +304,18 @@ body {
 }
 
 .btn {
+  width: 200px;
+  height: 50px;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.875;
-  display: inline-flex;
-  align-items: center;
-  text-align: center;
+
   letter-spacing: 0.06em;
   color: var(--white-color);
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  padding: 10px 32px;
+  padding: 0;
 }
 
 .special {
