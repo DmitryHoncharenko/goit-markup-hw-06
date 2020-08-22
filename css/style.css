@@ -78,8 +78,15 @@ body {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--white-color);
+
   background-image: url(../images/Vectorclose.png);
   padding: 0;
+}
+
+.btn-close:hover,
+.btn-close:focus {
+  fill: var(--accent-color);
+  background-color: var(--accent-color);
 }
 
 .form-page {
@@ -98,41 +105,42 @@ body {
 }
 
 .form-section {
+  position: relative;
   margin-bottom: 28px;
 }
 
 .form-input {
-  width: 100%;
+  width: 448px;
   height: 40px;
-  position: relative;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
   border-radius: 4px;
+  padding: 0;
+}
+
+.form-section:focus-within .form-iconname {
+  fill: var(--accent-color);
+}
+
+.form-input:placeholder-shown {
+  color: #2196f3;
 }
 
 .form-lebel {
   position: absolute;
-  left: 40px;
+  left: 1px;
   transform: translatey(-140%);
   font-weight: normal;
   font-size: 12px;
   line-height: 1.167;
   color: var(--main-color);
-
   letter-spacing: 0.01em;
 }
 
 .form-iconname {
   position: absolute;
-  padding: 14px 15px;
-
-  left: 40px;
-
-  transform: translateY(-10%);
-}
-
-.form-iconname:focus-within {
-  background-color: var(--accent-color);
+  transform: translateY(100%);
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .form-textarea {
@@ -143,6 +151,7 @@ body {
   width: 448px;
   height: 120px;
   resize: none;
+  outline: none;
 }
 
 .form-submit {
