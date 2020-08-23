@@ -68,7 +68,7 @@
           <button class="btn" data-modal-open>Заказать услугу</button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <form class="form-page">
+              <form class="form-page" autocomplete="off">
                 <h1 class="text-form">
                   Оставьте свои данные, мы вам перезвоним
                 </h1>
@@ -123,32 +123,37 @@
                     Почта
                   </label>
                 </div>
-                <div>
+                <div class="form-section">
                   <textarea
-                    class="form-textarea"
                     name="comment"
-                    rows="5"
-                    cols="45"
+                    class="form-textarea"
                     placeholder="Введите текст"
                   >
                   </textarea>
-                </div>
-                <div class="form-submit">
-                  <input
-                    id="submit-1"
-                    name="submit"
-                    type="checkbox"
-                    value="#"
-                  />
-                  <label for="submit-1"
-                    >Соглашаюсь с рассылкой и принимаю
-                    <a href="#">Условия договора</a>
+                  <label class="form-lebel" for="email">
+                    Комментарий
                   </label>
                 </div>
 
-                <button class="btn" type="submit">Отправить</button>
+                <label class="checkbox-field">
+                  <input
+                    class="input-checkbox"
+                    type="checkbox"
+                    name="agreement"
+                    value="agreement"
+                  /><span class="checkbox-icon"></span>
+                  <span class="checkbox-label"
+                    >Соглашаюсь с рассылкой и принимаю
+                    <a class="checkbox-link" href="">Условия договора</a>
+                  </span>
+                </label>
+                <button class="btn btn-submit" type="submit">Отправить</button>
               </form>
-              <button class="btn-close" data-modal-close></button>
+              <button class="btn-close" data-modal-close>
+                <svg class="icon-close" width="11" height="11">
+                  <use href="./images/sprite2.svg#icon-close"></use>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -526,13 +531,13 @@
       <div class="container">
         <section class="footer-list">
           <div class="adress">
-            <a href="./index.html" class="link logo"
+            <a href="./index.html" class="link logo-footer"
               ><img src="./images/Web Studio (2).png" class="img" alt=""
             /></a>
             <address class="address-title">
               <ul class="list">
                 <li>
-                  <p>г. Киев, пр-т Леси Украинки, 26</p>
+                  <p class="text-adress-p">г. Киев, пр-т Леси Украинки, 26</p>
                 </li>
                 <li class="text-adress">
                   <a href="mailto:info@example.com" class="link contacts-link"
@@ -604,18 +609,27 @@
               </li>
             </ul>
           </div>
+          <div>
+            <form class="form-footer">
+              <input
+                class="input-footer"
+                type="email"
+                name="email"
+                id="mail"
+                placeholder="E-mail"
+              />
+              <label class="label-footer" for="mail">
+                Подпишитесь на рассылку
+              </label>
 
-          <!-- <section class="footer-position">
-            <h3 class="item-title-footer">Подпишитесь на рассылку</h3>
-            <div class="last-footer">
-              <p class="footer-border">E-mail</p>
-              <button class="footer-button">
-                <svg width="143" height="30">
-                  <use href="./images/sprite2.svg#icon-Group"></use>
+              <button class="btn-footer" type="submit">
+                Подписаться
+                <svg class="btn-svg" width="24" height="24">
+                  <use href="./images/sprite2.svg#icon-icon-send"></use>
                 </svg>
               </button>
-            </div>
-          </section> -->
+            </form>
+          </div>
         </section>
       </div>
     </footer>
